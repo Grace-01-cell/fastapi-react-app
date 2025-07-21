@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FSP Submission Success</title>
+</head>
+<body>
+    <h2>Submission Successful</h2>
+    <ul>
+        {% for key, value in data.items() %}
+            <li><strong>{{ key.replace('_', ' ').title() }}</strong>: {{ value }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Back to form</a>
+</body>
+</html>
