@@ -1,14 +1,13 @@
-// src/components/Sidebar.jsx
 import React from 'react';
-import { NavLink } from 'react-router-dom';
-import './Sidebar.css';
+import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
   return (
     <div className="sidebar">
-      <NavLink to="/introduction" className="nav-link">Introduction</NavLink>
-      <NavLink to="/details" className="nav-link">Details</NavLink>
-      <NavLink to="/assessment" className="nav-link">Assessment Sections</NavLink>
+      <ul>
+        <li><Link to="/">Introduction</Link></li>
+        <li><Link to="/details">Details</Link></li>
+      </ul>
     </div>
   );
 };

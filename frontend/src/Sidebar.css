@@ -1,0 +1,14 @@
+/* Sidebar.css */
+.sidebar {
+  width: 200px;
+  height: 100vh;
+  background-color: #f4f4f4;
+  padding: 1rem;
+  position: fixed;
+}
+.sidebar a {
+  display: block;
+  margin: 10px 0;
+  color: #007bff;
+  text-decoration: none;
+}
