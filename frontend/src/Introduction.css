@@ -1,0 +1,31 @@
+.intro-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.intro-content h1,
+.intro-content h2 {
+  text-align: left;
+  margin-top: 2rem;
+}
+
+.intro-content ul {
+  margin-left: 1.5rem;
+}
+
+.logos {
+  margin-top: 2rem;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.logos img {
+  height: 50px;
+  object-fit: contain;
+}
+

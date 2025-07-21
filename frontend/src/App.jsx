@@ -1,11 +1,11 @@
-import React from 'react';
-import SectionForm from './SectionForm';
+// frontend/src/App.jsx
+import React from "react";
+import Intro from "./Intro";
 
 function App() {
   return (
-    <div style={{ padding: '2rem' }}>
-      <h1>ICSPS Maturity Tool</h1>
-      <SectionForm />
+    <div className="App" style={{ padding: "2rem" }}>
+      <Intro />
     </div>
   );
 }

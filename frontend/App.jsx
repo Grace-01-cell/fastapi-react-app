@@ -1,12 +1,25 @@
+// src/App.jsx
 import React from 'react';
-import SectionForm from './src/SectionForm';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Sidebar from './components/Sidebar';
+import Introduction from './components/Introduction';
+import Details from './components/Details'; // if created
+import './App.css';
 
 function App() {
   return (
-    <div style={{ padding: '2rem' }}>
-      <h1>ICSPS Maturity Tool</h1>
-      <SectionForm />
-    </div>
+    <Router>
+      <div className="app-layout">
+        <Sidebar />
+        <div className="main-content">
+          <Routes>
+            <Route path="/introduction" element={<Introduction />} />
+            <Route path="/details" element={<Details />} />
+            {/* Add other routes here */}
+          </Routes>
+        </div>
+      </div>
+    </Router>
   );
 }
 
